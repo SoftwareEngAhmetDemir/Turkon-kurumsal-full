@@ -1,0 +1,115 @@
+{
+  "addVersion": false,
+  "path": "./dist/",
+  "assetsPath": "assets/",
+  "banner": [
+    "/*!",
+    " *  <%= pkg.name %>",
+    " *  <%= pkg.description %>",
+    " *",
+    " *  @version v<%= pkg.version %>",
+    " *  @date <%= pkg.date %>",
+    " *",
+    " *  @link <%= pkg.url %> | http:// www.medyasoft.com.tr",
+    " *  @license <%= pkg.license %>",
+    " */"
+  ],
+  "copy": {
+    "src/js/config.js": "./js",
+    "src/js/footer.js": "./js",
+    "src/temp/**/*.*": "../temp",
+    "src/img/**/*.*": "./img",
+    "src/fonts/**/*.*": "./fonts"
+  },
+  "html": {
+    "path": "./dist",
+    "sources": [
+      "./src/html/[^_]*.html"
+    ],
+    "basePath": "./src/html",
+    "watch": [
+      "src/html/**/*.html"
+    ]
+  },
+  "css": {
+    "path": "css/",
+    "sources": [
+      "./src/sass/**/[^_]*.scss"
+    ],
+    "watch": [
+      "src/sass/**/*.{scss,css}",
+      "src/lib/**/*.{scss,css}"
+    ]
+  },
+  "js": {
+    "path": "js/",
+    "test": [
+      "src/js/**/*.js"
+    ],
+    "bundles": {
+      "libs": {
+        "name": "libs",
+        "paths": [
+          "src/lib/**/*.js"
+        ],
+        "destination": "libs.js",
+        "files": [
+          "src/lib/jquery-3.6.0.js",
+          "src/lib/popper.js",
+          "src/lib/bootstrap-5.0.1/js/bootstrap.bundle.js"
+        ],
+        "exclude": [
+          "**/npm.js"
+        ]
+      },
+      "app": {
+        "name": "app",
+        "destination": "app.js",
+        "paths": [
+          "src/js/*.js",
+          "src/js/plugin/**/*.js",
+          "!src/js/config.js",
+          "!src/js/footer.js"
+        ],
+        "files": [
+          "src/js/main.js"
+        ],
+        "exclude": [
+          "src/js/config.js",
+          "src/js/footer.js"
+        ]
+      }
+    },
+    "watch": [
+      "src/lib/**/*.js",
+      "src/js/*.js",
+      "src/js/plugin/**/*.js"
+    ]
+  },
+  "sprite": {
+    "srcPath": "src/img/sprite",
+    "targetPath": {
+      "img": "./dist/assets/img/sprite",
+      "css": "./src/sass/sprite"
+    },
+    "prefix": "ui-icons"
+  },
+  "fontIcon": {
+    "srcPath": "./src/icons/*.svg",
+    "templatePath": "./src/sass/iconfont/_template.scss",
+    "fontName": "fonticon",
+    "iconClass": "ms-icon",
+    "targetPath": {
+      "font": "./src/fonts/icon/",
+      "css": "../../sass/iconfont/_icons.scss"
+    },
+    "watch": [
+      "src/icons/*.svg"
+    ]
+  },
+  "serve": {
+    "port": 8080,
+    "livereload": true,
+    "debug": false
+  }
+}

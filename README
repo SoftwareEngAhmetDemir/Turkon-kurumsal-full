@@ -1,0 +1,59 @@
+Medyasoft ES5/Sass Boilerplate
+=================================
+
+# Javascript Get Paged Data Plugin
+
+Get paged data kullanımı için HTML'de eklenmesi gereken yapı:
+
+```
+<div class="news-list">
+    <ul class="list-unstyled" data-showmore="newsList" data-url="/temp/data/newsList.json|GET" data-template="#template-news">
+    </ul>
+</div>
+<button class="btn btn-primary show-more" data-target="newsList" data-form="#formSearch">DEVAMINI GÖR</button>
+
+<script type="text/x-html-template" id="template-news">
+    <li>
+        <a href="{{url}}"><img src="{{imgsrc}}" alt="{{title}}"></a>
+    </li>
+</script>
+```
+
+# DAHİL EDİLECEKLER
+
+# Javascript
+
+Carousel swipe esnasında eğer click event ile lighbox açılıyor ise her swipe esnasında otomatik açılma sorunu bulunuyor. Çözümü için aşağıdaki script refactor edilerek eklenmeli
+
+```
+function swipeFix(targetElement) {
+
+    var X, newX, isClick;
+
+    targetElement.find('a').on('mousedown', function(e) {
+        isClick = false;
+        X = e.clientX;
+    }).on('mouseup', function(e) {
+        newX = e.clientX;
+        if ( newX < X + 10 && newX > X - 10 ) {
+            isClick = true;
+        }
+    });
+
+    targetElement.find('a').on('click', function(e) {
+        if (!isClick) {
+            e.preventDefault();
+        }
+    });
+}
+
+var $promoSlider = $('.promo-slider');
+
+swipeFix($gallery);
+```
+
+# Sass
+
+# Html
+
+(c) 2017
