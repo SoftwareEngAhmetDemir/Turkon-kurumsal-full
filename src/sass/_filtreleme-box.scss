@@ -1,0 +1,35 @@
+ul {
+    &.filters {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+        li {
+            float: left;
+            padding: 3px;
+
+            a {
+                display: block;
+                color: #004273;
+                font-size: 15px;
+                line-height: 14px;
+                text-align: center;
+                text-decoration: none;
+                background: #e1ecf2;
+                padding: 5px;
+                border-radius: 3px;
+            }
+        }
+
+        li:nth-of-type(1) {
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 14px;
+            text-align: left;
+            color: #004273;
+            padding: 7px;
+        }
+
+    }
+}

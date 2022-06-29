@@ -1,0 +1,20 @@
+.homepage {
+
+    .duyurular {
+
+        display: flex;
+        flex-direction: column;
+
+        .card-body {
+            min-height: 100px !important;
+        }
+    }
+    .card-main-carousel{
+        .card-body{
+            .title{
+                height: 15px;
+            }
+            height: 150px !important;
+        }
+    }
+}

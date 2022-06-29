@@ -1,0 +1,171 @@
+.custom-tab {
+    a{
+        color: inherit;
+        text-decoration: none;
+    }
+    .tab {
+        video {
+            object-fit: cover;
+            height: 500px;
+        }
+        height: 520px;
+        margin-bottom: 0%;
+        .tabs-img {
+            height: 510px;
+            img {
+                height: 100%;
+            }
+        }
+    }
+    ul {
+        height: 100%;
+        width: 100%;
+        font-size: 13px;
+        li {
+            width: 24%;
+            .nav-link:hover{
+              color: $secondary;
+            }
+            .nav-link:focus{
+                color: white;
+            }
+            button {
+                position: relative;
+                color: rgba(0, 66, 115, 1);
+                background-color: #e1ecf2;
+                text-align: center;
+                border: none !important;
+                font-style: normal;
+                font-weight: bold;
+                height: 40px;
+                border-radius: 3px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                transition: all ease-in-out 0.5s;
+
+                &.active {
+                    background-color: rgba(217, 0, 13, 1);
+                    color: white;
+                    &:before {
+                        content: " ";
+                        width: 0;
+                        height: 0;
+                        border: 30px solid transparent;
+                        border-top: 0;
+                        border-bottom: 30px solid rgba(217, 0, 13, 1);
+                        position: absolute;
+                        top: -10px;
+                        z-index: -1;
+                    }
+                }
+            }
+
+        }
+    }
+}
+@include media-breakpoint-only(lg) {
+    .custom-tab {
+        .tab {
+            video {
+                object-fit: cover;
+                height: 470px;
+            }
+            margin-bottom: -6%;
+            .tabs-img {
+                height: 470px;
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-only(md) {
+    .custom-tab {
+        .tab {
+            height: 450px;
+            margin-bottom: 0%;
+            video {
+                object-fit: cover;
+                height: 440px;
+            }
+            .tabs-img {
+                height: 440px;
+                img {
+                    height: 100%;
+                }
+            }
+        }
+        ul {
+            li {
+                button {
+                    height: 60px;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-between(sm, md) {
+    .custom-tab {
+        .tab {
+            background: rgb(0, 92, 128);
+            height: 320px;
+            margin-bottom: 3%;
+            video {
+                object-fit: cover;
+                height: 320px;
+            }
+            .tabs-img {
+                height: 320px;
+                img {
+                    height: 320px;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-between(xs, sm) {
+    .custom-tab {
+        .tab {
+            height: 370px;
+            margin-bottom: -3%;
+            video {
+                object-fit: cover;
+                height: 220px;
+            }
+            .tabs-img {
+                height: 340px;
+                img {
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+        ul {
+            li {
+                button {
+                    height: 65px;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-only(xs) {
+    .custom-tab {
+        .tab {
+            height: 230px;
+            margin-bottom: 0%;
+            .tabs-img {
+                height: 220px;
+                img {
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

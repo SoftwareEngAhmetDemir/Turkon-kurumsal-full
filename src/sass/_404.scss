@@ -1,0 +1,30 @@
+.notfound {
+    a{
+        display: block;
+        position: absolute;
+        text-decoration: none;
+        color: #004273;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .text-404 {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: 50%;
+        transform: translateY(-50%);
+        .container-404 {
+            max-width: 90%;
+            width: 419px;
+            height: 300px;
+            border-radius: 10px;
+            background: #fff;
+        }
+    }
+
+    img {
+        min-height: 100vh;
+        object-fit: cover;
+    }
+}

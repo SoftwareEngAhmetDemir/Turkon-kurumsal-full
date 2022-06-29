@@ -1,0 +1,264 @@
+@font-face {
+	font-family: "fonticon";
+	src: url('../fonts/icon/fonticon.eot');
+	src: url('../fonts/icon/fonticon.eot?#iefix') format('eot'),
+		url('../fonts/icon/fonticon.woff') format('woff'),
+		url('../fonts/icon/fonticon.ttf') format('truetype'),
+		url('../fonts/icon/fonticon.svg#fonticon') format('svg');
+}
+
+@mixin ms-icon-styles {
+	font-family: "fonticon";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+    display: inline-block;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ms-icon {
+	line-height: 1;
+
+	&:before {
+		@include ms-icon-styles;
+	}
+}
+
+@function ms-icon-char($filename) {
+	$char: '';
+
+	@if $filename == 'arrow-down' {
+		$char: '\E001';
+	}
+	@if $filename == 'arrow-left' {
+		$char: '\E002';
+	}
+	@if $filename == 'arrow-next' {
+		$char: '\E003';
+	}
+	@if $filename == 'arrow-prev' {
+		$char: '\E004';
+	}
+	@if $filename == 'arrow-right' {
+		$char: '\E005';
+	}
+	@if $filename == 'arrow-up' {
+		$char: '\E006';
+	}
+	@if $filename == 'avatar' {
+		$char: '\E007';
+	}
+	@if $filename == 'check-mark' {
+		$char: '\E008';
+	}
+	@if $filename == 'close' {
+		$char: '\E009';
+	}
+	@if $filename == 'email' {
+		$char: '\E00A';
+	}
+	@if $filename == 'facebook' {
+		$char: '\E00B';
+	}
+	@if $filename == 'follow' {
+		$char: '\E00C';
+	}
+	@if $filename == 'forward' {
+		$char: '\E00D';
+	}
+	@if $filename == 'gobackarrow' {
+		$char: '\E00E';
+	}
+	@if $filename == 'inbox' {
+		$char: '\E00F';
+	}
+	@if $filename == 'instagram' {
+		$char: '\E010';
+	}
+	@if $filename == 'life-buoy' {
+		$char: '\E011';
+	}
+	@if $filename == 'linkedin' {
+		$char: '\E012';
+	}
+	@if $filename == 'list' {
+		$char: '\E013';
+	}
+	@if $filename == 'menu-mobile' {
+		$char: '\E014';
+	}
+	@if $filename == 'navlun' {
+		$char: '\E015';
+	}
+	@if $filename == 'plus' {
+		$char: '\E016';
+	}
+	@if $filename == 'program' {
+		$char: '\E017';
+	}
+	@if $filename == 'rezervasyon' {
+		$char: '\E018';
+	}
+	@if $filename == 'right-arrow-container-2' {
+		$char: '\E019';
+	}
+	@if $filename == 'search' {
+		$char: '\E01A';
+	}
+	@if $filename == 'share' {
+		$char: '\E01B';
+	}
+	@if $filename == 'site' {
+		$char: '\E01C';
+	}
+	@if $filename == 'takip' {
+		$char: '\E01D';
+	}
+	@if $filename == 'tel' {
+		$char: '\E01E';
+	}
+	@if $filename == 'time' {
+		$char: '\E01F';
+	}
+	@if $filename == 'trash' {
+		$char: '\E020';
+	}
+	@if $filename == 'twitter' {
+		$char: '\E021';
+	}
+	@if $filename == 'user' {
+		$char: '\E022';
+	}
+	@if $filename == 'yotube' {
+		$char: '\E023';
+	}
+	@if $filename == 'youtube' {
+		$char: '\E024';
+	}
+
+	@return $char;
+}
+
+@mixin ms-icon($filename, $insert: before, $extend: false) {
+	&:#{$insert} {
+		@if $extend {
+			@extend .ms-icon;
+		}
+		content: ms-icon-char($filename);
+	}
+}
+
+.ms-icon-arrow-down {
+	@include ms-icon(arrow-down);
+}
+.ms-icon-arrow-left {
+	@include ms-icon(arrow-left);
+}
+.ms-icon-arrow-next {
+	@include ms-icon(arrow-next);
+}
+.ms-icon-arrow-prev {
+	@include ms-icon(arrow-prev);
+}
+.ms-icon-arrow-right {
+	@include ms-icon(arrow-right);
+}
+.ms-icon-arrow-up {
+	@include ms-icon(arrow-up);
+}
+.ms-icon-avatar {
+	@include ms-icon(avatar);
+}
+.ms-icon-check-mark {
+	@include ms-icon(check-mark);
+}
+.ms-icon-close {
+	@include ms-icon(close);
+}
+.ms-icon-email {
+	@include ms-icon(email);
+}
+.ms-icon-facebook {
+	@include ms-icon(facebook);
+}
+.ms-icon-follow {
+	@include ms-icon(follow);
+}
+.ms-icon-forward {
+	@include ms-icon(forward);
+}
+.ms-icon-gobackarrow {
+	@include ms-icon(gobackarrow);
+}
+.ms-icon-inbox {
+	@include ms-icon(inbox);
+}
+.ms-icon-instagram {
+	@include ms-icon(instagram);
+}
+.ms-icon-life-buoy {
+	@include ms-icon(life-buoy);
+}
+.ms-icon-linkedin {
+	@include ms-icon(linkedin);
+}
+.ms-icon-list {
+	@include ms-icon(list);
+}
+.ms-icon-menu-mobile {
+	@include ms-icon(menu-mobile);
+}
+.ms-icon-navlun {
+	@include ms-icon(navlun);
+}
+.ms-icon-plus {
+	@include ms-icon(plus);
+}
+.ms-icon-program {
+	@include ms-icon(program);
+}
+.ms-icon-rezervasyon {
+	@include ms-icon(rezervasyon);
+}
+.ms-icon-right-arrow-container-2 {
+	@include ms-icon(right-arrow-container-2);
+}
+.ms-icon-search {
+	@include ms-icon(search);
+}
+.ms-icon-share {
+	@include ms-icon(share);
+}
+.ms-icon-site {
+	@include ms-icon(site);
+}
+.ms-icon-takip {
+	@include ms-icon(takip);
+}
+.ms-icon-tel {
+	@include ms-icon(tel);
+}
+.ms-icon-time {
+	@include ms-icon(time);
+}
+.ms-icon-trash {
+	@include ms-icon(trash);
+}
+.ms-icon-twitter {
+	@include ms-icon(twitter);
+}
+.ms-icon-user {
+	@include ms-icon(user);
+}
+.ms-icon-yotube {
+	@include ms-icon(yotube);
+}
+.ms-icon-youtube {
+	@include ms-icon(youtube);
+}

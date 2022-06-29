@@ -1,0 +1,96 @@
+@import "../lib/bootstrap-5.0.1/scss/_functions";
+@import "../lib/bootstrap-5.0.1/scss/_variables";
+@import "../lib/bootstrap-5.0.1/scss/_mixins";
+@import "_variables";
+
+footer {
+    background-color: $gray-500;
+    margin-top: 20px;
+    .text-end {
+        hr {
+            border: 1px solid #004273 !important;
+            opacity: 1;
+        }
+    }
+    .bar-before-footer {
+        background-color: #c40404;
+        height: 10px;
+    }
+
+    .social-media-box {
+        height: 2.5rem;
+        width: 2.5rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.6875rem;
+
+        a {
+            color: inherit;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                font-size: 14px;
+                line-height: 11.5px;
+                position: absolute;
+            }
+        }
+    }
+
+    .list-group {
+        .list-group-item {
+            a {
+                color: $secondary;
+            }
+
+            background-color: transparent;
+            border: none;
+            line-height: 14px;
+
+            &:first-child {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .turkon-live {
+        position: absolute;
+        right: 0rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .cerez-footer {
+        background-color: #004273;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        // height: 76px;
+        width: 100%;
+        color: #fff;
+        .icon {
+            display: block;
+            background-color: red;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+        }
+    }
+    .social-media-icon {
+        display: flex;
+        align-items: center;
+    }
+    @include media-breakpoint-down(lg) {
+        .turkon-live {
+            position: relative;
+            text-align: center;
+            top: 0;
+            transform: none;
+        }
+    }
+}

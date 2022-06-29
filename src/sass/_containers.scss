@@ -1,0 +1,223 @@
+.containers {
+    a{
+        color: inherit;
+        text-decoration: none;
+    }
+    .kg-lg-btn {
+        background-color: #e1ecf2;
+        border: 1px solid #95989a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 58px;
+        width: 110px;
+        line-height: 2;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .kg-lg {
+        color: #004273;
+        font-weight: bolder;
+        font-size: 40px;
+        line-height: 2;
+    }
+    .kg-lg-arrow {
+        display: inline-block;
+        position: relative;
+        top: 3px;
+    }
+    .card-image {
+        width: 100%;
+    }
+    .p-just {
+        font-size: 0.875rem;
+        color: #002d73;
+        i {
+            font-size: 1.25rem;
+        }
+        .ms-icon-time {
+            font-size: 15px;
+        }
+    }
+    .p-hr {
+        border-bottom: 4px solid #e1ecf2;
+        padding-bottom: 2.75rem;
+    }
+    .card-containers {
+        img {
+            height: 100%;
+            padding-bottom: 3.5rem;
+            padding-top: 1rem;
+        }
+        li {
+            list-style-type: none;
+        }
+        .card-text {
+            font-size: 0.875rem;
+            color: #10226d;
+        }
+    }
+    .dry-cargo {
+        border-bottom: 4px solid #e1ecf2;
+        padding-bottom: 1.875rem;
+    }
+    .reefer-cargo {
+        border-bottom: 1px solid #e1ecf2;
+        padding-bottom: 5.625rem;
+    }
+    h4 {
+        font-size: 1.25rem;
+    }
+    .card-just {
+        padding-right: 1.5rem;
+        .card-body {
+            padding: 0.7rem 0.7rem 0 0.7rem !important;
+            background-color: #e1ecf2;
+            border-radius: 0.7rem !important;
+        }
+        .card-text {
+            color: #002d73;
+        }
+        .btn {
+            padding: 0.25rem 0rem;
+            font-size: 1rem;
+        }
+    }
+    .card {
+        .card-img-overlay {
+            border-radius: 10px;
+        }
+        .card-custom-body {
+            background-color: #e1ecf2;
+            border-radius: 1rem;
+        }
+    }
+    img {
+        height: 100%;
+        border-radius: 10px;
+        width: 100%;
+    }
+    .tbl-news {
+        border-color: #002d73;
+        th {
+            font-size: 1.2rem;
+            color: #002d73;
+            border-bottom-width: 0.1rem;
+        }
+        td {
+            color: #002d73;
+            font-size: 0.875rem;
+        }
+        .ms-icon {
+            font-size: 0.7rem;
+            margin-right: 0.5rem;
+        }
+    }
+    .text-blue {
+        color: #004273;
+    }
+    .border-left-grey {
+        border-left: 2px solid #eff3f5;
+    }
+    .main-img {
+        width: 525px;
+    }
+    .tbl-container {
+        border-bottom: 4px solid #e1ecf2;
+        padding-bottom: 2rem;
+        .table {
+            font-size: 0.875rem;
+            color: #10226d;
+        }
+        div {
+            color: #004273;
+            white-space: nowrap;
+            font-size: 0.875rem;
+        }
+    }
+    .hardtop {
+        .card-text {
+            font-size: 0.875rem;
+            color: #10226d;
+        }
+        border-bottom: 1px solid #e1ecf2;
+        padding-bottom: 10rem;
+    }
+    .img-badge {
+        .nav-item {
+            a {
+                font-weight: 400;
+            }
+        }
+        .nav-link {
+            font-size: 0.875rem;
+            color: $white;
+        }
+        position: relative;
+        background: #004273;
+        border: 1px solid #004273;
+        margin-top: 20px;
+        border-radius: 4px;
+    }
+    .img-badge-1:before,
+    .img-badge-1:after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 44px;
+        border: 11px solid transparent;
+        border-bottom-color: #004273;
+    }
+    .img-badge-1:after {
+        left: 44px;
+        border: 10px solid transparent;
+        border-bottom-color: #004273;
+    }
+    .img-badge-2:before,
+    .img-badge-2:after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 155px;
+        border: 11px solid transparent;
+        border-bottom-color: #004273;
+    }
+    .img-badge-2:after {
+        left: 155px;
+        border: 10px solid transparent;
+        border-bottom-color: #004273;
+    }
+    .img-badge-3:before,
+    .img-badge-3:after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 330px;
+        border: 11px solid transparent;
+        border-bottom-color: #004273;
+    }
+    .img-badge-3:after {
+        left: 330px;
+        border: 10px solid transparent;
+        border-bottom-color: #004273;
+    }
+    .img-badge-4:before,
+    .img-badge-4:after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 520px;
+        border: 11px solid transparent;
+        border-bottom-color: #004273;
+    }
+    .img-badge-4:after {
+        left: 520px;
+        border: 10px solid transparent;
+        border-bottom-color: #004273;
+    }
+    #mainVideo {
+        border-radius: 1rem;
+        display: block;
+        margin: 3rem auto 3rem;
+    }
+}

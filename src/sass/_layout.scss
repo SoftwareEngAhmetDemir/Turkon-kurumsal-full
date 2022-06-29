@@ -1,0 +1,19 @@
+/*
+ *
+ * Layout
+ *
+ */
+
+ body {
+    overflow-x: hidden;
+}
+
+@each $key, $value in $grid-breakpoints {
+
+    @include media-breakpoint-up($key) {
+        
+        @include make-layout-classes($key, 1rem);
+        @include make-layout-padding-classes($key, 1rem);
+
+    }
+}

@@ -1,0 +1,44 @@
+/*
+ *
+ * Application Bootstrap
+ *
+ */
+ @import "../lib/bootstrap-5.0.1/scss/_functions";
+ @import "../lib/bootstrap-5.0.1/scss/_variables";
+ @import "../lib/bootstrap-5.0.1/scss/_mixins";
+
+//@import "sprite/ui-icons";
+
+@import "_variables";
+@import "_mixins";
+@import "_layout";
+@import "_typo";
+@import "_ui-icons";
+@import "_common";
+@import "iconfont/_icons";
+
+// Components
+@import "_sliders";
+@import "_card";
+@import "_breadcrumb";
+@import "_accordion";
+@import "_aside";
+@import "_video-islemleri.scss";
+
+// Pages
+@import "_homepage";
+@import "_pagination.scss";
+@import "_filtreleme-box.scss";
+@import "_containers.scss";
+@import "_container-details.scss";
+@import "_hizli-links.scss";
+@import "_filomuz.scss";
+@import "_servis-table";
+@import "_servisler-card.scss";
+@import "_avrupa-card.scss";
+@import "_form.scss";
+@import "_sikca-sorulan-sorulari";
+@import "_404.scss";
+@import "_banner";
+@import "_sertifikalar";
+@import "_custom-table";

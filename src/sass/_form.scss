@@ -1,0 +1,237 @@
+.form-c {
+    position: relative;
+    background: #e1ecf2;
+    width: 100%;
+    margin-left: 1px;
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-top: 35px;
+    padding-bottom: 5px;
+    .rec-container {
+        .g-recaptcha {
+            transform: scale(0.85);
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .invalid-msg-size,
+    .invalid-msg-extention {
+        display: none;
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    .target {
+        // height: 30px;
+        max-height: 100px;
+        overflow-y: auto;
+    }
+    .f-name {
+        cursor: pointer;
+
+        &:hover {
+            color: $red;
+        }
+    }
+    .remove-container {
+        .nameOfFile {
+            overflow-y: auto;
+            overflow-x: hidden;
+            height: 100%;
+            max-height: 150px;
+            width: 100%;
+        }
+    }
+    .turkon-btn {
+        width: 137px;
+        height: 46px;
+        border-radius: 10px;
+        background: linear-gradient(#f06d75 0%, #d9000d 8.87%, #6d0007 100%);
+        margin-bottom: 40px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        color: #fff;
+        text-align: center;
+        box-shadow: -3px 3px #d9000d, 3px -3px #d9000d, -3px -3px #d9000d, 3px 3px #d9000d;
+        filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+        border-color: #d9000d;
+        border-width: 1px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        height: 50px;
+        color: #004273;
+        border: 1px solid #004273;
+        border-radius: 5px;
+    }
+    .file-textArea {
+        cursor: pointer;
+    }
+    .getFile {
+        display: none;
+        pointer-events: none;
+        background-color: transparent;
+        position: relative;
+        text-indent: -90px;
+        //   width: 50px;
+    }
+    .file-desc {
+        color: black;
+        font-family: $font-family-sans-serif !important;
+    }
+    select {
+        height: 50px;
+        background: #e1ecf2;
+        border: 1px solid #004273;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOS40IiBoZWlnaHQ9IjYuMSIgdmlld0JveD0iMCAwIDkuNCA2LjEiPg0KICA8ZGVmcz4NCiAgICA8Y2xpcFBhdGggaWQ9ImNsaXAtcGF0aCI+DQogICAgICA8cmVjdCB3aWR0aD0iOS40IiBoZWlnaHQ9IjYuMSIgZmlsbD0ibm9uZSIvPg0KICAgIDwvY2xpcFBhdGg+DQogIDwvZGVmcz4NCiAgPGcgaWQ9IkRyb3Bkb3duIiBjbGlwLXBhdGg9InVybCgjY2xpcC1wYXRoKSI+DQogICAgPHBhdGggaWQ9IlBhdGhfMzYiIGRhdGEtbmFtZT0iUGF0aCAzNiIgZD0iTTYuNyw4LjEsMiwzLjQsMy40LDIsNi43LDUuMywxMCwybDEuNCwxLjRaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMiAtMikiIGZpbGw9IiMwMDQyNzMiLz4NCiAgPC9nPg0KPC9zdmc+DQo=");
+        background-repeat: no-repeat;
+        background-position: 97%;
+        color: #004273;
+    }
+    .form-floating {
+        .text-area {
+            color: #004273;
+            border: 1px solid #004273;
+            border-radius: 5px;
+        }
+    }
+    .front-form-btn {
+        transform: translateX(-25px);
+    }
+    .text-area {
+        height: 140px;
+    }
+    .checkboxf {
+        white-space: nowrap;
+        text-align: left;
+        margin-left: 10px;
+
+        input[type="checkbox"] {
+            height: 30px;
+            width: 30px;
+            line-height: 20px;
+            margin-left: 2px;
+        }
+        .form-check-label {
+            margin-left: 5px;
+            padding-top: 4px;
+            height: 30px;
+            font-size: 1rem;
+            line-height: 30px;
+            white-space: nowrap;
+            user-select: none;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .submit-btn-container {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        .submit-btn {
+            @extend .turkon-btn;
+
+            &:disabled {
+                background: #dddddd;
+                box-shadow: -3px 3px #dddddd, 3px -3px #dddddd, -3px -3px #dddddd, 3px 3px #dddddd;
+                border-color: #dddddd;
+                filter: none;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .form-c {
+        position: relative;
+        padding-left: 10px;
+        padding-right: 10px;
+        .submit-btn-container {
+            position: relative;
+            margin-left: 20px;
+            width: 100%;
+            justify-content: center !important;
+            top: 20px;
+        }
+        .rec-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
+            .g-recaptcha {
+                transform: none;
+            }
+        }
+    }
+    .form-floating {
+        * {
+            font-size: 12px;
+        }
+    }
+    .checkboxf {
+        margin-left: 0 !important;
+        padding: 0;
+        .form-check-label {
+            white-space: normal !important;
+            font-size: 0.9rem !important;
+        }
+        .form-check {
+            padding-left: 0 !important;
+        }
+        input[type="checkbox"] {
+            height: 30px;
+            width: 30px;
+            line-height: 20px;
+            transform: translateY(4px);
+            margin: 0 !important;
+        }
+    }
+}
+.form-b {
+    background: #e1ecf2;
+    height: 445px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    color: #004273;
+    .break {
+        flex-basis: 100%;
+        height: 0px;
+    }
+    .hafiza {
+        position: relative;
+        padding: 20px;
+        input[type="submit"] {
+            @extend .turkon-btn;
+            position: relative;
+            top: 20px;
+            left: 23%;
+            transform: translateX(-50%);
+        }
+    }
+}

@@ -1,0 +1,60 @@
+/*
+ *
+ * Mixins
+ *
+ */
+@mixin make-layout-class($class, $type, $grid-gutter-width, $grid-columns) {
+
+    @for $i from 0 through $grid-columns {
+
+        .#{$class}#{$i} {
+            #{$type}: ($grid-gutter-width * $i) !important;
+        }
+    }
+}
+
+@mixin make-layout-classes($key, $grid-gutter-width, $grid-columns: $grid-columns) {
+
+    @each $class, $type in
+        (t, margin-top),
+        (b, margin-bottom),
+        (l, margin-left),
+        (r, margin-right) {
+
+            @include make-layout-class(lm-#{$key}-#{$class}, $type, $grid-gutter-width, $grid-columns);
+    }
+}
+
+@mixin make-layout-padding-classes($key, $grid-gutter-width, $grid-columns: $grid-columns) {
+
+    @each $class, $type in
+        (t, padding-top),
+        (b, padding-bottom),
+        (l, padding-left),
+        (r, padding-right) {
+
+            @include make-layout-class(lp-#{$key}-#{$class}, $type, $grid-gutter-width, $grid-columns);
+    }
+}
+
+@mixin make-col-widths($grid-columns, $class) {
+
+    @for $i from 0 through $grid-columns {
+
+        .width-#{$class}#{$i} {
+            width: ($grid-gutter-width * $i) !important;
+        }
+    }
+}
+
+@mixin fontface($name, $file, $weight: normal, $style: normal){
+    @font-face {
+      font-family: quote($name);
+      src: local(quote($name)),
+            url('../fonts/#{$file}.woff2') format('woff2'),
+            url('../fonts/#{$file}.woff') format('woff');
+      font-weight: $weight;
+      font-style: $style;
+      font-display: swap;
+    }
+}

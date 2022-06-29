@@ -1,0 +1,35 @@
+.filomuz-tbl-container {
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .rect-parent {
+        width: 100%;
+        display: flex;
+        font-size: 0.9rem;
+        justify-content: center;
+        align-content: center;
+        box-sizing: border-box;
+        .side-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            background-color: #e1ecf2;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 2px;
+            box-sizing: border-box;
+            color: #004273;
+        }
+    }
+    img {
+        border-radius: 10px;
+        position: relative;
+    }
+    .table-border {
+        border-bottom: 3px solid #004273;
+        width: 100%;
+    }
+}

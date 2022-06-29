@@ -1,0 +1,15 @@
+{
+    "result": true,
+    "data": [
+        {
+            "id": "1",
+            "question": "lorem",
+            "answer": "lorem"
+        },
+        {
+            "id": "2",
+            "question": "lorem",
+            "answer": "lorem"
+        }
+    ]
+}

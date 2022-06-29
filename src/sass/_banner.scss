@@ -1,0 +1,12 @@
+.banner {
+    position: relative;
+    min-height: 204px;
+    margin-bottom: 50px;
+    background: linear-gradient(rgba(151, 56, 64, 0) 70%, #004273 100%, #004273 40%);
+  
+    img {
+        min-height: 204px;
+        position: relative;
+        z-index: -1;
+    }
+}

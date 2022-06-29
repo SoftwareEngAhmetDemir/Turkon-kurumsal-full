@@ -1,0 +1,68 @@
+.sikca-sorular {
+    width: 100%;
+    margin: auto;
+    .card {
+        width: 30%;
+        background: #e1ecf2;
+        margin-right: 3%;
+        padding-left: 22px;
+        .circle-container {
+            height: 70px;
+            .circle {
+                width: 46px;
+                height: 46px;
+                background: transparent;
+                border: 1px solid #004273;
+                border-radius: 50%;
+                position: relative;
+                top: 12px;
+            }
+        }
+        .text {
+            padding-bottom: 10px;
+            .title {
+                // max-width: 184px;
+                // height: 14px;
+                // font-weight: bold;
+                // font-size: 1rem;
+                // line-height: 30px;
+                // text-align: left;
+                // color: #004273;
+                margin-bottom: 20px;
+            }
+            .normal-text {
+                line-height: 14px;
+                width: 95%;
+                font-size: 0.77rem;
+                line-height: 14px;
+                color: #004273;
+                border-bottom: 1px solid #004273;
+                padding-bottom: 15px;
+            }
+        }
+    }
+}
+.search-sikca-sorular {
+    width: 96%;
+    input:focus{
+        outline: none;
+        border: 1px solid rgba(255, 0, 0, 0.425);
+    }
+}
+.search-sikca-sorular-2{
+    width: 99%;
+    input:focus{
+        outline: none;
+        border: 1px solid rgba(255, 0, 0, 0.425);
+    }
+}
+@include media-breakpoint-down(lg) {
+    .sikca-sorular {
+        .card {
+            width: 100%;
+        }
+    }
+    .search-sikca-sorular ,.search-sikca-sorular-2{
+        width: 100%;
+    }
+}

@@ -1,0 +1,25 @@
+.pagination {
+    padding-bottom: 25px;
+    border-bottom-color: #e1ecf2;
+    ul {
+        li {
+            a {
+                #active {
+                    background-color: white;
+                }
+                background-color: #e1ecf2;
+                color: #004273;
+                &:hover {
+                    font-weight: bold;
+                    background: #fafafa;
+                    border: 1px solid #004273;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .page-link {
+            padding: 0.375rem 0.75rem;
+        }
+    }
+}

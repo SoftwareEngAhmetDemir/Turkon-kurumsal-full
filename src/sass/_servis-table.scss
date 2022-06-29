@@ -1,0 +1,183 @@
+.sefer-no {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: left;
+    color: #004273;
+}
+.small-tbl-titles {
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: left;
+    color: #004273;
+}
+.small-tbl-names {
+    font-weight: bold;
+    font-size: 0.65rem;
+    line-height: 14px;
+    text-align: left;
+    color: #004273;
+    white-space: nowrap;
+}
+.small-tbl-values {
+    font-weight: bolder;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #004273;
+    white-space: nowrap;
+}
+
+.table-amerika {
+    width: 100%;
+    .last-call {
+        position: relative;
+        div {
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            background: #ededed;
+            position: absolute;
+            top: 0px;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .future-call {
+        position: relative;
+        div {
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            background: #e1ecf2;
+            position: absolute;
+            top: 0px;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    thead {
+        tr {
+            text-decoration: none;
+            border-bottom: 2px solid #004273;
+            background-color: white;
+            th {
+                font-weight: bold;
+                text-align: center;
+                color: #004273;
+                padding-right: 10px;
+                font-size: 0.9rem;
+                div:first-of-type {
+                    font-weight: bold;
+                    text-align: center;
+                }
+                a {
+                    color: #004273;
+                    text-decoration: underline;
+                }
+            }
+            td {
+                font-weight: normal;
+                color: #004273;
+                text-align: center;
+            }
+        }
+    }
+    tr {
+        td {
+            font-weight: normal;
+            color: #004273;
+            text-align: center;
+            font-size: 0.9rem;
+            border-bottom: 1px solid #00417350;
+            padding: 10px;
+        }
+
+        td:first-of-type {
+            text-align: left;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+    }
+}
+.main {
+    display: block;
+    position: relative;
+    font-size: 10px;
+    white-space: nowrap;
+    line-height: 12px;
+    color: #004273;
+    div {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+    div:first-child:before {
+        background: #ededed;
+        font-size: 12px;
+        border: 1px solid#e1ecf2;
+        content: " aa ";
+        color: #ededed;
+        margin-right: 5px;
+    }
+    div:nth-child(2):before {
+        background: white;
+        font-size: 12px;
+        border: 1px solid #e1ecf2;
+        content: " aa ";
+        color: #ffff;
+        margin-right: 5px;
+    }
+    div:nth-child(3):before {
+        background: #e1ecf2;
+        font-size: 12px;
+        border: 1px solid#c6dae5;
+        content: " aa ";
+        color: #e1ecf2;
+        margin-right: 5px;
+    }
+}
+@include media-breakpoint-between(xs, lg) {
+    .border-title {
+        text-decoration: none;
+        border-bottom: 2px solid #004273;
+    }
+    .title-class {
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+        color: #004273;
+        a {
+            color: #004273;
+        }
+    }
+    .tbl-v {
+        font-weight: normal;
+        font-size: 10px;
+        letter-spacing: -0.01em;
+        line-height: 12px;
+        text-align: left;
+        color: #004273;
+        text-align: center;
+    }
+    .private-checkbox {
+        .left-check-box {
+            background: #ededed;
+            border: 3px solid black;
+        }
+        .white-border-box {
+            background: #e1ecf2;
+            border: 1px solid #c6dae5;
+        }
+    }
+    /* Hide the default checkbox */
+    .tbl-titles {
+        white-space: nowrap;
+        height: 5px;
+    }
+}
