@@ -1,0 +1,40 @@
+<section class="slider mb-5">
+  <div class="carousel">
+    <div data-slick data-slick-type="main">
+      @@for (var i = 0; i < 3; i++) { 
+      <div class="slide">
+        <picture>
+          <source srcset="https://dummyimage.com/1920x960/c4c4c4/fff" media="(min-width: 769px)" />
+          <source srcset="https://dummyimage.com/768x432/c4c4c4/fff" media="(max-width: 768px)" />
+          <img src="https://dummyimage.com/768x432/c4c4c4/fff" alt="Banner" class="vh-100 img-fluid" loading="lazy" width="1920" height="960" />
+        </picture>
+        <div class="slide-text">
+          <h3> Experience the privilege of Turkon inland transportation.</h3>
+          <p class="fs-6">
+            We offer complementary services to maritime transportation with our modern vehicles and experienced team.
+          </p>
+          <a href="#" class="btn bg-white text-secondary slider-button" aria-label="any label">
+            DETAYLI BİLGİ AL
+            <i class="ms-icon ms-icon-arrow-next text-danger"></i>
+          </a>
+        </div>
+    </div>
+    }
+    <video autoplay muted loop class="vh-100">
+      <source src="./temp/videos/video banner.mp4" type="video/MP4" />
+    </video>
+  </div>
+  <div class="container materials-container">
+    <div class="dots"></div>
+    <div class="slick-arrows container d-none d-lg-block">
+      <button class="slick-arrow slick-prev" aria-label="Prev Slide">
+        <i class="ms-icon ms-icon-arrow-prev"></i>
+      </button>
+      <button class="slick-arrow slick-next" aria-label="Next Slide">
+        <i class="ms-icon ms-icon-arrow-next"></i>
+      </button>
+    </div>
+  </div>
+  </div>
+  @@include('./include/main-slider-boxes.html')
+</section>

@@ -1,0 +1,25 @@
+<div class="mb-4 rounded-2 video d-flex justify-content-center">
+  <div class="video-container">
+    <div class="buyuk-play-btn">
+      <img class="img-buyuk-btn" src="assets/img/play-circle-icon.svg" alt="play" loading="lazy"/>
+    </div>
+    <div class="video-player">
+      <video class="video-tag" poster="assets/img/gemi.png">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/MP4" />
+      </video>
+      <div class="controls">
+        <button class="play-button control-button" aria-label="seekbar">
+          <img  src="assets/img/seekbar.svg" alt="seekbar" loading="lazy"  width="100%"/>
+        </button>
+        <label for="video-time"></label>
+        <input type="range" min="0" max="100" class="timeline" value="0" id="video-time" />
+        <button class="sound-button control-button" aria-label="sound">
+          <img class="sound-btn-img" src="assets/img/icons/sound-button.svg" alt="sound" loading="lazy" width="100%"/>
+        </button>
+        <button class="control-button fullscreen-button" aria-label="full screen">
+          <img class="full-screen-img" src="assets/img/icons/full-screen.svg" alt="screen" loading="lazy" width="100%"/>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

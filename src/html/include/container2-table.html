@@ -1,0 +1,33 @@
+<div class="row">
+    <div class="col-lg-4 col-8">
+        <div class="row border-top">
+            @@for(var i= 0 ; i < colA.length ; i++){ <div class="col-12 border-bottom fw-bold py-1">
+                `+ colA[i] +`</div>
+        }
+       </div>
+    </div>
+    <div id="kg" class="col-4">
+        <div class="row border-top">
+            @@for(var i= 0 ; i < colB.length ; i++){ <div class="col-12 border-bottom py-1"> `+ colB[i] +`</div>
+        }
+        </div>
+    </div>
+    <div id="lb" class="d-lg-block d-none col-4">
+        <div class="row w-75 border-top">
+            @@for(var i= 0 ; i < colC.length ; i++){ <div class="col-12 border-bottom  py-1 ">`+ colC[i] +` </div>
+        }
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="d-lg-none d-lg-none d-block col-8 py-1"></div>
+    <div class="d-lg-none d-lg-none d-block col-4 py-1">
+        <button class="kg-lg-btn btn-primary" id="btn-kg-lb">
+            <div class="kg-lg">Kg.
+                <div class="kg-lg-arrow">
+                    <i class="ms-icon ms-icon-right-arrow-container-2"></i>
+                </div> Lb.
+            </div>
+        </button>
+    </div>
+</div>

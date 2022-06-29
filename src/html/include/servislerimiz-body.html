@@ -1,0 +1,118 @@
+<h4>MED - USA SERVİSİ (USM)</h4>
+<div class="mt-4 text-secondary fst-italic fs-5">
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+    mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+</div>
+<div class="col-12 mt-5">
+    <img src="https://dummyimage.com/750x400/c4c4c4/fff" alt="some alt" loading="lazy" width="100%"
+        data-bs-toggle="modal" data-bs-target="#staticBackdrop" />
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="https://dummyimage.com/750x400/c4c4c4/fff" alt="some alt" loading="lazy" width="100%" />
+                </div>
+                <div class="modal-footer ">
+                    <div class="border border-3 border-dark rounded-circle p-1">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12 mt-5 text-secondary">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed lacus lacus. Donec eu orci
+    egestas,
+    accumsan leo quis, pharetra odio. Morbi nibh velit, eleifend non volutpat sit amet, luctus
+    porttitor
+    augue. Nam porta interdum dolor, quis interdum eros volutpat nec. Ut vulputate justo sed dui
+    pulvinar,
+    sagittis varius ipsum faucibus. Nam at facilisis lacus. In molestie volutpat nunc, eu faucibus
+    nunc.
+    Sed
+    iaculis porttitor posuere. Fusce dapibus, massa sed rutrum faucibus, est risus eleifend magna,
+    at
+    iaculis nunc arcu nec purus. Aenean sagittis dictum dui, ac sollicitudin dolor vestibulum vel.
+    Pellentesque consequat justo id congue elementum. Nunc porta tempor velit elementum placerat.
+    Donec
+    vitae justo porta ante dignissim dapibus.
+</div>
+<div class="col-12 mt-5 mb-5">
+    @@include('./include/video.html')
+</div>
+<div class="col-12 text-secondary">
+    @@for(var i = 0 ; i < 4; i++){
+    <p>Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Aenean sed lacus lacus. Donec eu orci egestas, accumsan leo quis, pharetra
+        odio.
+        Morbi nibh
+        velit, eleifend non volutpat sit amet, luctus porttitor augue. Nam porta interdum dolor,
+        quis
+        interdum eros
+        volutpat nec. Ut vulputate justo sed dui pulvinar, sagittis varius ipsum faucibus. Nam at
+        facilisis
+        lacus. In
+        molestie volutpat nunc, eu faucibus nunc. Sed iaculis porttitor posuere. Fusce dapibus,
+        massa
+        sed
+        rutrum
+        faucibus, est risus eleifend magna, at iaculis nunc arcu nec purus. Aenean sagittis dictum
+        dui,
+        ac
+        sollicitudin dolor vestibulum vel. Pellentesque consequat justo id congue elementum. Nunc
+        porta
+        tempor velit
+        elementum placerat. Donec vitae justo porta ante dignissim dapibus.</p>
+    }
+</div>
+<div class="col-12">
+    <div class="row">
+        <div class="col-xl-6 col-lg-6 col-12 mb-2">
+            <img width="100%" src="https://dummyimage.com/750x400/c4c4c4/fff" alt="some alt" loading="lazy" />
+        </div>
+        <div class="col-xl-6 col-lg-6 col-12 mb-2">
+            <img width="100%" src="https://dummyimage.com/750x400/c4c4c4/fff" alt="some alt" loading="lazy" />
+        </div>
+    </div>
+</div>
+<div class="col-12 mt-5 serivs-programi">
+    <div class="row border-4 border-bottom pb-5 ps-2">
+        <div class="col-5">
+            <h5 class="col-12 text-secondary">Servis Programı</h5>
+        </div>
+        <div class="text-secondary col-xl-7 col-lg-7 col-12 d-flex justify-content-end serivs-programi-weeks">
+            <span class="me-xl-5 me-lg-5 me-2 serivs-programi-weeks">Week: 06.2021</span> <span>Rev
+                No: 0002</span>
+        </div>
+    </div>
+</div>
+<div class="mt-4 col-12">
+    @@for(var i=0 ; i < 3 ; i++) { @@include('./include/servis-amerika-table.html') } <div
+        class="d-xl-block d-lg-block d-none me-0 mt-5">
+        <div class="row private-checkbox">
+            <div class="col-3"></div>
+            <div class="d-flex justify-content-end main">
+                <div>
+                    Last Call
+                </div>
+                <div>
+                    Last Updated Call
+                </div>
+                <div>
+                    Future Call
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+<div class="row border-4 border-bottom pb-3 mt-5">
+    <h4>Diğer Servislerimiz</h4>
+</div>
+<div class="row mt-4">
+    @@for(var i = 0 ; i< 9;i++){ <div class="col-lg-4 col-12 mb-4">
+        @@include('./include/servislerimiz-card.html')
+</div>
+}
+</div>

@@ -1,0 +1,15 @@
+@@include('./include/news.html')
+@@include('./include/duyurular-duyur-sayfa-icin.html')
+
+<div class="aside">
+
+    <div class="card-aside mb-3">
+        @@include('./include/card.html', { "src": "https://dummyimage.com/600x400/c4c4c4/fff", "title": "Taşımacılık Hizmetleri", "description": "Dünyanın dört bir yanındaki 300 limandan sunduğumuz taşımacılık hizmetleri hakkında daha fazla bilgi edinin. Maersk olarak, şirketinizin tüm dünya ile bağlantısını sağlayabilir ve sevkiyatlarınızı kolaylaştırabiliriz.", "color": "red" })
+    </div>
+    @@for(var i = 0 ; i < 20 ; i++){
+    <div class="card-aside mb-3">
+        @@include('./include/card.html', { "src": "https://dummyimage.com/600x400/c4c4c4/fff", "title": "Taşımacılık Hizmetleri", "description": "Dünyanın dört bir yanındaki 300 limandan sunduğumuz taşımacılık hizmetleri hakkında daha fazla bilgi edinin. Maersk olarak, şirketinizin tüm dünya ile bağlantısını sağlayabilir ve sevkiyatlarınızı kolaylaştırabiliriz.", "color": "blue" })
+    </div>
+    }
+
+</div>

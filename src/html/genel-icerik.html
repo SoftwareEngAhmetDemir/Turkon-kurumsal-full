@@ -1,0 +1,208 @@
+@@include('./include/head.html')
+@@include('./include/header.html')
+@@include('./include/banner.html')
+<div class="container">
+  <div class="row">
+    <div class="col-xl-9 col-12">
+      <div class="general-content border-2">
+        @@include('./include/breadcrumb.html', {"title":"Turkon Hakkında" ,arr: ["Hakkımızda", "Kurumsal"] })
+        <h1 class=" fw-normal">Örnek İçerik Başlığı</h1>
+        <div class="mb-4 border-4 border-bottom"></div>
+        <div class="mb-3">
+          <img src="assets/img/time.svg" alt="time" loading="lazy" width="16" height="16" class="img-round m-0" />
+          <span class="ps-1"> June 2, 2020</span>
+        </div>
+        <h4>
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        </h4>
+        <picture>
+          <source srcset="https://dummyimage.com/750x400/c4c4c4/fff" media="(min-width: 769px)" class="img-round" />
+          <source srcset="https://dummyimage.com/250x150/c4c4c4/fff" media="(max-width: 768px)" class="img-round" />
+          <img src="https://dummyimage.com/750x400/c4c4c4/fff" alt="some alt" loading="lazy" width="100%" />
+        </picture>
+        <p>
+          Donec eu orci egestas, accumsan leo quis, pharetra odio. Morbi nibh velit, eleifend non volutpat sit amet,
+        </p>
+        <p>Sed ac sapien eget felis bibendum vehicula id eget neque.
+          ipsum et viverra lobortis, eros risus rutrum dui, ut eleifend est augue at urna. Etiam sapien leo, varius quis
+        </p>
+        <hr class="text-secondary" />
+        <picture>
+          <source srcset="https://dummyimage.com/250x150/c4c4c4/fff" media="(min-width: 769px)" class="img-round" />
+          <source srcset="https://dummyimage.com/250x150/c4c4c4/fff" media="(max-width: 768px)" class="img-round" />
+          <img src="https://dummyimage.com/250x150/c4c4c4/fff" alt="some alt" class="right" loading="lazy" width="250"
+            height="150" />
+        </picture>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa similique quas blanditiis quisquam, modi,
+          autem eaque voluptates cum quis in quae quibusdam ea doloribus nulla corporis ex deserunt excepturi. Magni!.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, itaque! Autem beatae nobis aliquid voluptatum
+          neque rerum nihil. Totam voluptatum sapiente rerum, dicta molestias quia perspiciatis blanditiis esse magni!
+          Sint? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa similique quas blanditiis quisquam,
+          modi, autem eaque voluptates cum quis in quae quibusdam ea doloribus nulla corporis ex deserunt excepturi.
+          Magni!.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, itaque! Autem beatae nobis aliquid voluptatum
+          neque rerum nihil. Totam voluptatum sapiente rerum, dicta molestias quia perspiciatis blanditiis esse magni!
+          Sint?
+        </p>
+        <hr class="text-secondary" />
+        <picture>
+          <source srcset="https://dummyimage.com/250x150/c4c4c4/fff" media="(min-width: 769px)" class="img-round" />
+          <source srcset="https://dummyimage.com/250x150/c4c4c4/fff" media="(max-width: 768px)" class="img-round" />
+          <img src="https://dummyimage.com/250x150/c4c4c4/fff" alt="some alt" class="left" loading="lazy" width="250"
+            height="150" />
+        </picture>
+        <a href="#">deneme linki</a>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa similique quas blanditiis quisquam, modi,
+          autem eaque voluptates cum quis in quae quibusdam ea doloribus nulla corporis ex deserunt excepturi. Magni!.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur veniam aliquam rem recusandae ex quo eos
+          repudiandae esse iusto repellendus consequatur, ea corrupti tempora earum officiis, quas quaerat minima harum?
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa similique quas blanditiis quisquam, modi,
+          autem eaque voluptates cum quis in quae quibusdam ea doloribus nulla corporis ex deserunt excepturi. Magni!.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, itaque! Autem beatae nobis aliquid voluptatum
+          neque rerum nihil. Totam voluptatum sapiente rerum, dicta molestias quia perspiciatis blanditiis esse magni!
+          Sint?
+        </p>
+        <hr class="text-secondary" />
+        @@include('./include/carousel.html',{"src":["https://dummyimage.com/600x400/c4c4c4/fff","https://dummyimage.com/600x400/c4c4c4/fff"]})
+        <hr class="text-secondary" />
+        @@include('./include/foto-galeri.html',{"src":["https://dummyimage.com/260x150/c4c4c4/fff","https://dummyimage.com/260x150/c4c4c4/fff","https://dummyimage.com/260x150/c4c4c4/fff","https://dummyimage.com/260x150/c4c4c4/fff"]})
+        <hr class="text-secondary" />
+        @@include('./include/accordion.html')
+        <hr class="text-secondary" />
+        @@include('./include/table.html')
+        @@include('./include/video.html')
+        @@include('./include/linkler.html',{"arr":["Dokümanlar","Linkler"]})
+        <!-- 
+        <table class="custom-table">
+          <tbody>
+            <tr>
+              <td>
+            
+              </td>
+              <td>
+                <span> MUKADDES KALKAVAN</span>
+                <u>US2035W</u>
+              </td>
+              <td>
+                <span>MELCHIOR SCHULTE</span>
+                <u>US2036W</u>
+              </td>
+              <td>
+                <span>KAAN KALKAVAN</span>
+                <u>US2101</u>
+              </td>
+              <td>
+                <span>NEVZAT KALKAVAN</span>
+                <u>US2102W</u>
+              </td>
+            </tr>
+            @@for(var i=0 ; i < 10; i++ ){ 
+              <tr>
+                <td>ALEX DEP.</td>
+                <td>jan 15,21</td>
+                <td>jan 15,21</td>
+                <td>jan 15,21</td>
+                <td>jan 15,21</td>
+              </tr>
+              }
+          </tbody>
+        </table>  -->
+
+        <table class="custom-table">
+          <tbody>
+            <tr>
+              <th colspan="2" rowspan="2">WESTBOUND</th>
+              <th colspan="14" class="text-center p-3">Yükleme Limanları</th>
+            </tr>
+            <tr class="no-border">
+              <th>Beyrut</th>
+              <th>Hayfa</th>
+              <th>Aşdod</th>
+              <th>Odessa </th>
+              <th>Köstence</th>
+              <th>Poti</th>
+              <th>Bilbao</th>
+              <th>Kazablanka</th>
+              <th>Tanca</th>
+              <th>Leixoes</th>
+              <th>Vigo</th>
+              <th>Lizbon</th>
+            </tr>
+            <tr>
+              <th rowspan="4">Boşaltma Limanları</th>
+              <th class="bg-transparent">Algeciras</th>
+              <td>15</td>
+              <td>16</td>
+              <td>14</td>
+              <td>13</td>
+              <td>15</td>
+              <td>15</td>
+              <td>17</td>
+              <td>7</td>
+              <td>5</td>
+              <td>4</td>
+              <td>3</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th>New York</th>
+              <td>25</td>
+              <td>26</td>
+              <td>24</td>
+              <td>23</td>
+              <td>25</td>
+              <td>25</td>
+              <td>32</td>
+              <td>22</td>
+              <td>20</td>
+              <td>19</td>
+              <td>18</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <th>
+               Nolfork
+              </th>
+              <td>27</td>
+              <td>28</td>
+              <td>26</td>
+              <td>25</td>
+              <td>27</td>
+              <td>27</td>
+              <td>34</td>
+              <td>24</td>
+              <td>22</td>
+              <td>21</td>
+              <td>20</td>
+              <td>19</td>
+            </tr>
+            <tr>
+              <th>
+               Savannah
+              </th>
+              <td>29</td>
+              <td>30</td>
+              <td>28</td>
+              <td>27</td>
+              <td>29</td>
+              <td>29</td>
+              <td>36</td>
+              <td>26</td>
+              <td>24</td>
+              <td>23</td>
+              <td>22</td>
+              <td>21</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-3 d-none d-xl-block border-start">
+      @@include('./include/aside.html')
+    </div>
+  </div>
+  @@include('./include/paylas.html')
+  @@include('./include/hizli-links.html')
+</div>
+@@include('./include/footer.html')

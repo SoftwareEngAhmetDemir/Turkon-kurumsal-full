@@ -1,0 +1,22 @@
+@@include('./include/head.html')
+@@include('./include/header.html')
+@@include('./include/banner.html')
+<div class="container">
+    <div class="row">
+        <div class="col-xl-9 col-12">
+            <div class="general-content border-2">
+                @@include('./include/breadcrumb.html', { "title": "40' hardtop", "arr": [ "Ekipmanlar" , ] })
+                @@include('./include/iletisim.html')
+                <h1>Öneri ve Şikayet ile İlgili Başlık</h1>
+                <div class="border-4 border-bottom pt-4 mb-4"></div>
+                @@include('./include/form.html')
+            </div>
+        </div>
+        <div class="col-3 d-none d-xl-block border-start">
+            @@include('./include/aside.html')
+        </div>
+    </div>
+    @@include('./include/paylas.html')
+    @@include('./include/hizli-links.html')
+</div>
+@@include('./include/footer.html')

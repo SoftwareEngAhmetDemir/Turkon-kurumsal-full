@@ -1,0 +1,31 @@
+@@include('./include/head.html')
+@@include('./include/header.html')
+
+<div class="homepage">
+
+    @@include('./include/main-slider.html')
+
+    <div class="container">
+        <section class="sektorel-cozumler mb-5">
+            @@include('./include/sektorel-cozumler.html')
+        </section>
+
+        <section class="lojistik-cozumler mb-5">
+            @@include('./include/lojistik-cozumler.html')
+        </section>
+
+        <section class="haberler mb-5">
+            <div class="row">
+                <div class="col-12 col-lg-9">
+                    @@include('./include/haberler.html')
+                </div>
+                <div class="col-12 col-lg-3">
+                    @@include('./include/duyurular.html')
+                </div>
+            </div>
+        </section>
+    </div>
+
+</div>
+
+@@include('./include/footer.html')

@@ -1,0 +1,24 @@
+<div class="carousel rounded-lg mb-4 carousel-centered">
+    <div data-slick data-slick-type="igrow">
+        @@for(var i = 0; i < src.length; i++) {
+            <div class="content w-100">
+                <picture>
+                    <source srcset="` + src[i] + `" media="(min-width: 769px)" />
+                    <source srcset="` + src[i] + `" media="(max-width: 768px)" />
+                    <img src="` + src[i] + `" alt="Banner" alt="some alt" class="img-fluid w-100 card-img-top"
+                        loading="lazy" width="100%" height="225" />
+                </picture>
+            </div>
+        }
+    </div>
+    <div class="materials-container">
+        <div class="md-slider slick-arrows container ml-md-5 ml-xl-5 ml-12">
+            <button class="slick-arrow slick-prev bg-light text-danger" aria-label="prev">
+                <span class="ms-icon ms-icon-arrow-prev"></span>
+            </button>
+            <button class="arrow-kaydirma bg-light text-danger slick-next" aria-label="next">
+                <span class="ms-icon ms-icon-arrow-next"></span>
+            </button>
+        </div>
+    </div>
+</div>

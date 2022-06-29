@@ -1,0 +1,11 @@
+<div class="breadcrumb">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#" aria-label="homepage">Anasayfa</a></li>
+            @@for (var i = 0; i < arr.length; i++) {
+                <li class="breadcrumb-item"><a href="#" aria-label="link">` + arr[i] + `</a></li>
+            }
+            <li class="breadcrumb-item active" aria-current="page">@@title</li>
+        </ol>
+    </nav>
+</div>

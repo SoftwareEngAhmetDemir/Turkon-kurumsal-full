@@ -1,0 +1,137 @@
+<div class="containers">
+    <div class="custom-tab">
+        <div class="tab">
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-default" role="tabpanel"
+                    aria-labelledby="pills-default-tab">
+                    <video autoplay muted loop>
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/MP4" />
+                    </video>
+                </div>
+                <div class="tab-pane fade" id="pills-inside" role="tabpanel" aria-labelledby="pills-inside-tab">
+                    <img class="tabs-img" src="https://dummyimage.com/750x400/c4c4c4/fff" alt="..." width="100%"
+                        loading="lazy">
+                </div>
+                <div class="tab-pane fade" id="pills-opening" role="tabpanel" aria-labelledby="pills-opening-tab">
+                    <video autoplay muted loop>
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/MP4" />
+                    </video>
+                </div>
+                <div class="tab-pane fade" id="pills-roof" role="tabpanel" aria-labelledby="pills-roof-tab">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fugiat quam blanditiis cumque
+                        harum reprehenderit veniam atque aut? Eveniet veritatis ab nostrum numquam quisquam consequuntur
+                        voluptatem ipsum rem. Maiores, consequatur.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <ul class="nav container-p-container-2" id="list">
+            <li class="nav-item me-1" role="presentation">
+                <button class="nav-link w-100 active" data-bs-toggle="pill" id="btn1" data-bs-target="#pills-default"
+                    type="button" role="tab" aria-controls="pills-default" aria-selected="false">
+                    default
+                </button>
+            </li>
+            <li class="nav-item me-1" role="presentation">
+                <button class="nav-link w-100" data-bs-toggle="pill" data-bs-target="#pills-inside" type="button"
+                    role="tab" aria-controls="pills-inside" aria-selected="false">
+                    Inside Dimensions
+                </button>
+            </li>
+            <li class="nav-item me-1" role="presentation">
+                <button class="nav-link w-100" data-bs-toggle="pill" data-bs-target="#pills-opening" type="button"
+                    role="tab" aria-controls="pills-opening" aria-selected="false">
+                    Door Opening Dimensions
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link w-100" id="pills-roof-tab" data-bs-toggle="pill" data-bs-target="#pills-roof"
+                    type="button" role="tab" aria-controls="pills-roof" aria-selected="false">
+                    Roof Opening Dimensions
+                </button>
+            </li>
+        </ul>
+
+    </div>
+    <div class="text-blue pt-4 mt-1">
+        <h4>General Container Information</h4>
+    </div>
+    <p>
+        Sed ac sapien eget felis bibendum vehicula id eget neque. Phasellus
+        faucibus, ipsum et viverra lobortis, eros risus rutrum dui, ut
+        eleifend est augue at urna. Etiam sapien leo, varius quis porttitor
+        ut, faucibus id erat. Vestibulum ante ipsum primis in faucibus orci
+        luctus et ultrices posuere cubilia curae; Nunc faucibus enim metus,
+        non scelerisque magna pulvinar et. Curabitur vel bibendum mauris.
+        Nullam euismod dictum dictum. Quisque eu nisl ante. Integer bibendum
+        ultricies dapibus. In auctor vestibulum odio eleifend lobortis.
+        Pellentesque ullamcorper id metus a luctus.
+    </p>
+    <div class="tbl-container px-2">
+        @@include('./include/container2-table.html',{
+        "colA":[
+        " Azami Gros Ağırlığı",
+        "Azami Taşıma Ağırlığı",
+        "Dara",
+        "İç Hacim ",
+        "İç Yükseklik",
+        "İç Genişlik",
+        "İç Uzunluk",
+        "Kapı Yüksekliği",
+        "Kapı Genişliği",
+        "Havalandırma Değeri",
+        "Tavan Açıklığı Genişliği",
+        "Postalar Arası Uzunluk",
+        "Nem Kontrolü",
+        "Isı Kontrolü",
+        "Kapakları Kapalı Halde Yükseklik"
+        ]
+        ,
+        "colB":[
+        "30480 Kg",
+        "26630 Kg",
+        "3850 Kg",
+        "66,7 cbm",
+        "2394 mm",
+        "2350 mm",
+        "12030 mm",
+        "2278 mm",
+        "2341 mm",
+        "2350 mm",
+        "2350 mm",
+        "11686 mm",
+        "EVET(%65-%95)",
+        "(-)30(+)30",
+        "648 mm"
+        ],
+        "colC":[
+        " 67,200 lb.",
+        "56,840 lb.",
+        "10,360 lb.",
+        "2,374 cbft",
+        "7’ 10”",
+        "7’ 7”",
+        "39’ 5 1/4”",
+        "7’ 8”",
+        "7’ 5 5/8”",
+        "7’ 2 7/8”",
+        "38’ 5 1/2”",
+        "38’ ",
+        "EVET(%65-%95)",
+        "(-)30(+)30",
+        "5’"
+        ]
+        })
+    </div>
+    <div class="text-blue pt-4 pb-2 d-none d-xl-block d-lg-block hardtop">
+        <h4>Diğer Standard / Hardtop</h4>
+        <p>20’ Standard / Hardtop</p>
+        <p>40’ Standard / Hardtop High Cube</p>
+    </div>
+    <div class="text-blue pt-4 pb-2 d-lg-none d-block">
+        <h4>Diğer Standard / Hardtop</h4>
+        <p>20’ Standard / Hardtop</p>
+        <p>40’ Standard / Hardtop High Cube</p>
+    </div>
+</div>

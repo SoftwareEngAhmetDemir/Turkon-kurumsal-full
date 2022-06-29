@@ -1,0 +1,36 @@
+@@include('./include/head.html')
+@@include('./include/header.html')
+<section class="banner mb-4 notfound">
+    <div class="text-404">
+        <div class="container-404">
+            <div class="text-danger text-center fs-1 mt-4">404</div>
+            <div class="text-secondary fs-4 px-4 pb-3 pt-2 text-center">
+                Aradığınız sayfa bulunamadı. Aşağıda sunduğumuz içerikleri inceleyebilir veya anasayfaya dönebilirsiniz.
+            </div>
+            <a href="#haberler"><i class="ms-icon ms-icon-arrow-down"></i></a>
+        </div>
+    </div>
+    <img src="assets/img/404.png" alt="Banner" class="banner-img" loading="lazy" width="100%" height="100%">
+</section>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="general-content border-2">
+                @@include('./include/breadcrumb.html', { "title": "40' hardtop", "arr": [ "Ekipmanlar" , ] })
+                <section class="haberler mb-5" id="haberler">
+                    <div class="row">
+                        <div class="col-12 col-lg-9">
+                            @@include('./include/haberler.html')
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            @@include('./include/duyurular.html')
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    @@include('./include/paylas.html')
+    @@include('./include/hizli-links.html')
+</div>
+@@include('./include/footer.html')
